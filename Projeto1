@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 1</title>
+</head>
+<body>
+    <h1>Introdução ao HTML e Tags Básicas</h1>
+    <hr />
+    <h2 id="indice">Índice</h2>
+    <ul>
+        <li><a href="#introducao">História do HTML</a></li>
+        <li><a href="#conceito">O que é HTML?</a></li>
+        <li><a href="#como-funciona">Como funciona o HTML?</a></li>
+        <li><a href="#estrutura">Estrutura Básica de um Documento HTML</a></li>
+        <li><a href="#tags-basicas">Tags Básicas do HTML</a></li>
+        <ol>
+            <li><a href="#cabecalhos">Cabeçalhos</a></li>
+            <li><a href="#paragrafos">Parágrafos</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#listas">Listas</a></li>
+            <li><a href="#imagens">Imagens</a></li>
+            <li><a href="#divisoes">Divisões e Spans</a></li>
+        </ol>
+        <li><a href="#conclusao">Conclusão</a></li>
+        <li><a href="#referencia">Referências</a></li>
+    </ul>
+    <br />
+    <h2 id="introducao">História do HTML</h2>
+    <small><a href="#indice">Voltar</a></small>
+    <p>Em 1980 Tim Berners-Lee propôs um projeto baseado no conceito de hipertexto
+    denominado ENQUIRE. Este projeto foi inicialmente todo desenvolvido em linguagem
+    Pascal. Em 1989 Tim Berners-Lee com a ajuda de um estudante do CERN chamado Robert
+    Cailliau conseguiu implementar a primeira comunicação bem sucedida entre um cliente
+    HTTP e um servidor através da internet. Surgia então a World Wide Web. Porém o protocolo
+    HTTP só foi implementado em fevereiro de 1993.</p>
+    <p>O HTML surgiu em 1990 e até o seu quinto ano de vida sofreu várias revisões e
+    alterações na sua especificação. Nesta época, quem controlava o padrão era o CERN e a IETF.
+    Após 1995, o padrão passou a ser regularizado pela W3C, entidade que regula os padrões
+    Web e que será detalhada com maior profundidade posteriormente.
+    Em 1993, Dave Raggett propôs uma evolução do padrão HTML,
+    denominada HTML+. Entretanto tal proposta nunca foi implementada.
+    <br><br>
+    O verdadeiro sucessor do HTML foi o HTML 2.0, o qual foi apresentado na primeira
+    conferência mundial sobre Web, a World Wide Web Conference. Essa versão do HTML pode
+    ser vista apenas como uma correção da versão anterior, ou seja, apenas formalizava as
+    características do HTML que já estavam em uso.
+    <br><br> 
+    Depois, Dave Raggett escreveu o HTML 3.0 baseado em seu mais recente rascunho
+    doHTML+. Entretanto, mais uma vez, a versão do HTML não foi implementada. Esta
+    especificação foi superada pela versão 3.2, a qual novamente foi uma correção e providenciou
+    total compatibilidade com a versão 2. O HTML 3.2 implementou características tais como
+    tabelas, applets e texto flutuante ao redor de imagens. Posteriormente, Raggest foi co-author
+    do HTML 4 e ajudou com o desenvolvimento das linguagens como XHTML,XForms, MathML e além de 
+    outras especificações mais modernas da W3C.
+    <br /> <br />
+    Em dezembro de 1999 o HTML 4.01 foi publicado trazendo como principal premissa a
+    compatibilidade com as suas versões anteriores através de 3 implementações:</p>
+    <ul>
+        <li><strong>Scrict (estrita) –</strong> implementação na qual fica proibida a utilização de elementos obsoletos da
+    linguagem;</li>    
+        <li><strong>Transitional (transitória) –</strong> implementação na qual os elementos obsoletos são permitidos;</li>
+        <li><strong>Frameset –</strong> implementação direcionada para site que usam frames.</li>
+    </ul>
+    <br />
+    <h2 id="conceito">O que é HTML?</h2>
+    <small><a href="#indice">Voltar</a></small>
+    <p>Antes de tudo, vamos destrinchar essa sigla: HTML significa, em inglês, Hyper Text Markup Language. Já em português é Linguagem de Marcação de Hipertexto. 
+    É a base da web, como já comentado. Mas por quê? 
+    Mais simples do que parece: ele concede a possibilidade do estabelecimento da estrutura básica de um website. </p>
+    <p>Em suma, o HTML auxilia no desenvolvimento web, organizando as páginas e dando significado às mesmas. Assim, o usuário consegue ter acesso a imagens, textos e diversos elementos que, sem o HTML, não seriam carregados.
+    É importantíssimo ressaltar que, embora seja confundido por diversas pessoas, o HTML não é uma linguagem de programação, visto que, ele não está ali para auxiliar na criação de um software. 
+    Na realidade, o HTML é uma linguagem de marcação, ou seja, ele designa como a aplicação irá aparecer, onde os seus elementos estarão inseridos e assim sucessivamente, como o JavaScript. </p>
+    <br /> 
+    <h2 id="como-funciona">Como funciona o HTML?</h2>
+    <small><a href="#indice">Voltar</a></small>
+    <p>O HTML (HyperText Markup Language) funciona como uma linguagem de marcação que estrutura e apresenta conteúdo na web. Diferente das linguagens de programação, o HTML não executa lógica ou cálculos, mas define a estrutura e a semântica do conteúdo da página.<br>
+    A linguagem de marcação usa códigos HTML na criação das suas páginas. 
+    Esses códigos são responsáveis por definir espaçamento, cor, tamanho da letra e tantos outros aspectos de um site. </p>
+    <br />
+    <h2 id="estrutura">Estrutura Básica de um Documento HTML</h2>
+    <small><a href="#indice">Voltar</a></small>
+    <p>Um documento HTML típico possui uma estrutura básica que inclui as seguintes partes:</p>
+    <img src="./imagem/html.png" alt="imagem de um documento html" width="550px"/>
+    <ul>
+        <li><strong>&lt;!DOCTYPE html&gt;:</strong> Indica a versão do HTML usada, neste caso, HTML5.
+        <li><strong>&lt;html&gt;:</strong> Elemento raiz que envolve todo o conteúdo.
+        <li><strong>&lt;head&gt;:</strong> Contém meta-informações como o título da página.
+        <li><strong>&lt;title&gt;:</strong> Define o título da página que aparece na aba do navegador.
+        <li><strong>&lt;body&gt;:</strong> Contém o conteúdo visível da página.
+    </ul>
+    <br />
+    <h2 id="tags-basicas">Tags Básicas do HTML</h2>
+    <small><a href="#indice">Voltar</a></small>
+    <ol>
+        <li id="cabecalhos"><strong>&lt;h1&gt; a &lt;h6&gt; - Cabeçalhos</strong></li>
+        <p>Estas tags definem cabeçalhos, com &lt;h1&gt; sendo o mais importante e &lt;h6&gt; o menos importante.</p>
+        <br />
+        <li id="paragrafos"><strong>&lt;p&gt; - Parágrafos</strong></li>
+        <p>Usada para definir blocos de texto.</p>
+        <br />
+        <li id="links"><strong>&lt;a&gt; - Links</strong></li>
+        <p>Cria hiperlinks, onde o atributo <i>href</i> especifica o destino do link.</p>
+        <br />
+        <li id="listas"><strong>&lt;ul&gt; e &lt;ol&gt; - Listas</strong></li>
+        <p>Cria listas não ordenadas &lt;ul&gt; e ordenadas &lt;ol&gt;, com &lt;li&gt; definindo cada item da lista.</p>
+        <br />
+        <li id="imagens"><strong>&lt;img&gt; - Imagens</strong></li>
+        <p>Exibe imagens na página, com <i>src</i> indicando a fonte da imagem e <i>alt</i> fornecendo uma descrição alternativa.</p>
+        <br />
+        <li id="divisoes"><strong>&lt;div&gt; e &lt;span&gt; - Divisões e Spans</strong></li>    
+        <p>&lt;div&gt; é usado para agrupar blocos de conteúdo, enquanto &lt;span&gt; é utilizado para estilizar partes de texto inline.</p>
+    </ol>
+    <br />
+    <h2 id="conclusao">Conclusão</h2>
+    <small><a href="#indice">Voltar</a></small>
+    <p>Conhecer e entender essas tags básicas do HTML é o primeiro passo para se tornar um desenvolvedor web competente. Com essas ferramentas, você pode começar a criar páginas da web estruturadas e funcionais. No próximo artigo, exploraremos como usar CSS para estilizar seus documentos HTML e torná-los visualmente atraentes.</p>
+    <br />
+    <h2 id="referencia">Referências</h2>
+    <small><a href="#indice">Voltar</a></small>
+    <p>Referências bibliográficas:</p>
+    <ul>
+        <li><a href="https://blog.xpeducacao.com.br/o-que-e-html/?gad_source=1&gclid=Cj0KCQjwgJyyBhCGARIsAK8LVLMGWBGqh_mqMl0DY7GHQtEoVV92bdf16xjRaYJLTKCksDEJE3bIfQUaApxAEALw_wcB" target="_blank"</a>blog.xpeducacao.com.br/o-que-e-html/?                gad_source=1&gclid=Cj0KCQjwgJyyBhCGARIsAK8LVLMGWBGqh_mqMl0DY7GHQtEoVV92bdf16xjRaYJLTKCksDEJE3bIfQUaApxAEALw_wcB</li>
+        <li><a href="https://www.oxnar.com.br/2016/1ati/ipwaulas19a22/aula060916.pdf" target="balnk"</a>www.oxnar.com.br/2016/1ati/ipwaulas19a">https://www.oxnar.com.br/2016/1ati/ipwaulas19a22/aula060916.pdf</li>
+    </ul>
+</body>
+</html>
